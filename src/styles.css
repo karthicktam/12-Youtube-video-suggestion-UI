@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+}
+
+.app {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  background-image: linear-gradient(to bottom, salmon, darksalmon);
+  text-align: center;
+  width: 100%;
+  padding: 20px 15px;
+}
+
+.header h1 {
+  margin: 0 0 15px;
+}
+
+.header textarea {
+  border: 1px solid #eee;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 14px;
+  width: 500px;
+  padding: 10px;
+  min-height: 70px;
+  max-width: 100%;
+}
+
+.count-container {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.container {
+  margin: 20px 10px;
+  max-width: 100%;
+  width: 700px;
+}
+
+.suggestion {
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  color: #000;
+}
+
+.suggestion:not(:last-of-type) {
+  border-bottom: 1px solid #b1b2b3;
+}
+
+.suggestion .left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  width: 60px;
+}
+
+.suggestion .left p {
+  margin: 10px 0 0;
+}
+
+.suggestion .left .votes {
+  display: block;
+  font-size: 22px;
+}
+
+.vote-button {
+  background-color: transparent;
+  border: 1px solid #b1b2b3;
+  border-radius: 50%;
+  color: #b1b2b3;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+}
+
+.vote-button.voted {
+  border-color: #515253;
+  color: #515253;
+}
+
+.vote-button:active {
+  transform: scale(0.98);
+}
+
+.vote-button:focus {
+  outline: none;
+}
+
+.suggestion .right {
+  margin-left: 20px;
+}
+
+.suggestion .right strong {
+  color: #111;
+  font-size: 18px;
+}
